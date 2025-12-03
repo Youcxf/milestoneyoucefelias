@@ -2,15 +2,15 @@ import {motion} from "framer-motion";
 
 export default function NavBar() {
   const navBarVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0, scale: 1 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 2 } },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: -20 },
+    hidden: { opacity: 0},
     visible: {
-      opacity: 1,
-      y: 0,
+      opacity: 1
+      
     },
   };
 
@@ -25,14 +25,14 @@ export default function NavBar() {
         <motion.li
           className="px-4 py-1 rounded-full cursor-pointer hover:bg-white/20 transition"
           variants={itemVariants}
-          transition={{delay: 2}}
+          transition={{delay: 2, duration: 2}}
         >
           Home
         </motion.li>
         <motion.li
           className="px-4 py-1 rounded-full cursor-pointer hover:bg-white/20 transition"
           variants={itemVariants}
-        transition={{delay: 2.5}}
+        transition={{delay: 2.5, duration: 2}}
 
         >
           <a href="#department">Department</a>
@@ -40,7 +40,7 @@ export default function NavBar() {
         <motion.li
           className="px-4 py-1 rounded-full cursor-pointer hover:bg-white/20 transition"
           variants={itemVariants}
-        transition={{delay: 3}}
+        transition={{delay: 3, duration: 2}}
 
         >
           <a href="#teachers">Teachers</a>

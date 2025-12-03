@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 export default function Banner() {
   const letters = "Connect".split("");
   const letters2 = "Better.".split("");
@@ -6,12 +7,7 @@ export default function Banner() {
   return (
     <div className="flex-1 relative h-full overflow-hidden flex flex-col justify-center items-center">
       
-      
-
-      
-      
-
-      {/* animation premier texte */}
+      {/* ... text animations remain the same ... */}
       <h1 className="flex text-[15rem] h-[60%] font-bold text-white text-shadow-black relative">
         {letters.map((letter, i) => (
           <motion.span
@@ -49,24 +45,24 @@ export default function Banner() {
       </h1>
 
       
-
-      <div
-       className="h-full text-amber-50 w-full flex justify-start px-100 ">
+      <div className="h-full text-amber-50 w-full flex justify-end px-100"> 
         <motion.div 
-        initial={{ y: -200, opacity: 0, filter: "blur(20px)" }}
-            animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-            transition={{
-              duration: 0.5,
-              delay:  0.2,
-              type: "spring",
-              stiffness: 25,
-            }}
-        className="w-100 text-lg h-fit rounded-4xl backdrop-blur-md p-4"
+          initial={{ y: -200, opacity: 0, filter: "blur(20px)" }}
+          animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+          transition={{
+            duration: 0.5,
+            delay:  0.2,
+            type: "spring",
+            stiffness: 25,
+          }}
+         
+          className="w-100 text-lg h-fit rounded-4xl backdrop-blur-md p-4 text-right"
         >
           <span className="font-bold">EduConnect</span> allows you to easily connect with teachers from various departments with
           ease instead of using slower methods such as <span className="font-bold italic">MIO</span>
         </motion.div>
       </div>
+      
     </div>
   );
 }
