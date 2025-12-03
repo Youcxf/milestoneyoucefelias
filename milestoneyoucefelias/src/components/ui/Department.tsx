@@ -342,7 +342,7 @@ export default function Department() {
             <div className="flex gap-2">
               <button
                 type="submit"
-                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+                className="bg-blue-900 hover:bg-green-700 text-white px-4 py-2 rounded"
               >
                 {formMode === "create" ? "Add Department" : "Update Department"}
               </button>
