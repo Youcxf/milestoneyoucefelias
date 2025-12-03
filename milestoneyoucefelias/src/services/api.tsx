@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE = "http://localhost:8080";
+const BASE = "https://milestone1-ogfx.onrender.com";
 
 const axiosInstance = axios.create({
   baseURL: BASE,
