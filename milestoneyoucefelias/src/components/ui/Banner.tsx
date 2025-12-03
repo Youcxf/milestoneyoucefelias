@@ -51,7 +51,7 @@ export default function Banner() {
       
 
       <div
-       className="h-full text-amber-50 w-full flex justify-start px-200 ">
+       className="h-full text-amber-50 w-full flex justify-start px-100 ">
         <motion.div 
         initial={{ y: -200, opacity: 0, filter: "blur(20px)" }}
             animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
